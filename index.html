@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+  <title>Prof. Valdigleis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/vStyles.css" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="./assets/icons/sigma.png" alt="Logo" />
+        <a href="#">Valdigleis</a>
+      </div>
+      <ul class="navbar__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+      </ul>
+      <button class="navbar__button">
+        <i class="fa-solid fa-envelope"></i> Contato
+      </button>
+      <ul class="navbar__hidden__menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li>
+          <button>
+            <i class="fa-solid fa-envelope"></i> Contato
+          </button>
+        </li>
+      </ul>
+      <div class="navbar__toggle__button">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="about__photo">
+      <img src="./assets/images/Jedi.png" alt="Linus como um Jedi">
+    </div>
+    <div class="about__infos">
+      <p class="about__infos__p1">
+        Hello, humans! I'm...
+      </p>
+      <h1>Valdigleis (Dk4LL)</h1>
+      <p class="about__infos__p2">
+        only a Peanuts fan, computer science professor, and software engineer (on hiatus).
+      </p>
+      <div class="about__infos__links">
+        <button onclick="window.open('http://lattes.cnpq.br/2633660012976715', '_blank')">
+          <i class="ai ai-lattes"></i>
+          Lattes
+        </button>
+        <button onclick="window.open('https://orcid.org/0000-0001-8738-5836', '_blank')">
+          <i class="ai ai-orcid"></i>
+          Orcid
+        </button>
+        <button onclick="window.open('https://dblp.org/pid/175/1726.html', '_blank')">
+          <i class="ai ai-dblp"></i> 
+          Dblp
+        </button>
+      </div>
+      <p class="about__infos__p2">
+        If you wish, you can also find me on the following platforms:
+      </p>
+      <ul>
+        <li class="about__social__midia"><img src="./assets/icons/discord.png" alt="Icone do Discord"
+            onclick="window.open('https://discordapp.com/users/435112713870376962')"></li>
+        <li class="about__social__midia"><img src="./assets/icons/github.png" alt="Icone do Github"
+            onclick="window.open('https://github.com/valdigleis')"></li>
+        <li class="about__social__midia"><img src="./assets/icons/instagram.png" alt="Icone do Instagram"
+            onclick="window.open('https://www.instagram.com/valdigleis/')"></li>
+        <li class="about__social__midia"><img src="./assets/icons/reddit.png" alt="Icone do Reddit"
+            onclick="window.open('https://www.reddit.com/user/V4ldigleis/')"></li>
+        <li class="about__social__midia"><img src="./assets/icons/steam.png" alt="Icone da Steam"
+            onclick="window.open('https://steamcommunity.com/id/valdigleis/')"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="academics">
+    <div class="academics__container">
+      <h1>Current Courses</h1>
+      <ul>
+        <li><a href="">CCMP0161</a></li>
+        <li><a href="">CCMP0164</a></li>
+        <li><a href="">CCMP0148</a></li>
+      </ul>
+      <button><i class="fa-solid fa-magnifying-glass"></i> Show all</button>
+    </div>
+    <div class="academics__container">
+      <h1>Actives Projects</h1>
+      <ul>
+        <li>
+          <a href="https://www.github.com/valdigleis/mcf" target="_blank">Matemática e Computação Formal</a>
+        </li>
+        <li>
+          <a href="https://www.github.com/valdigleis/vtex" target="_blank"><em>Templates</em> vTeX</a>
+        </li>
+        <li>FuMS &mid; <span>Sem repositório online</span>.</li>
+      </ul>
+      <button><i class="fa-solid fa-magnifying-glass"></i> Show all</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__itens">
+      <p>© <span id="footer__year"></span> Valdigleis</p>
+      <p>
+        Coded with <a href="https://www.neovim.io" target="_blank">NeoVim</a> (0.10.1) using
+        <i class="devicon-html5-plain-wordmark colored"></i> +
+        <i class="devicon-css3-plain colored"></i> +
+        <i class="devicon-javascript-plain colored"></i>
+      </p>
+      <p>Last update &Rightarrow; <span id="footer__date"></span>.</p><br>
+    </div>
+  </footer>
+
+  <script src="./js/vFunctions.js"></script>
+  <script>
+    toggleMenuEnable();
+    insertInfos();
+  </script>
+
+</body>
+
+</html>
